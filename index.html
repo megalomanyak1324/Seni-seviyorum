@@ -3,64 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Mezuniyet Buketi</title>
+<title>Mezuniyet Buketi ❤️</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
 body{
-background:linear-gradient(180deg,#ffd6e7,#ffeef5);
-min-height:100vh;
+margin:0;
+padding:20px;
+font-family:Arial,sans-serif;
+background:linear-gradient(#ffd6e7,#fff0f6);
 text-align:center;
 overflow-x:hidden;
-padding:20px;
 }
 
 h1{
 color:#d63384;
-font-size:32px;
 margin-top:20px;
 }
 
 .subtitle{
 font-size:22px;
 color:#ff4d94;
-margin:20px auto;
-max-width:700px;
 font-weight:bold;
+margin:25px auto;
+max-width:700px;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
 gap:15px;
-margin-top:35px;
+margin-top:30px;
 }
 
 .buket{
-height:230px;
-background:white;
+height:250px;
 border-radius:20px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:22px;
-font-weight:bold;
+overflow:hidden;
 cursor:pointer;
+background:white;
 box-shadow:0 0 20px rgba(255,105,180,.3);
 transition:.3s;
-border:4px solid #ffd1e6;
 }
 
 .buket:hover{
 transform:scale(1.05);
+}
+
+.buket img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
 #message{
@@ -69,20 +62,18 @@ background:white;
 margin-top:40px;
 padding:25px;
 border-radius:25px;
-box-shadow:0 0 25px rgba(255,105,180,.3);
+box-shadow:0 0 20px rgba(255,105,180,.3);
 }
 
 #message h2{
 color:#ff4d94;
-margin-bottom:15px;
 }
 
 .heart{
 position:fixed;
 bottom:-50px;
 font-size:30px;
-animation:fly 6s linear infinite;
-opacity:.8;
+animation:fly 5s linear forwards;
 pointer-events:none;
 }
 
@@ -97,47 +88,36 @@ opacity:0;
 }
 }
 
-.topdecor{
-font-size:45px;
-margin-top:10px;
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="topdecor">
-🧸💕🌹💕🧸
-</div>
-
-<h1>Mezuniyet Tebriği</h1>
+<h1>🧸💕🌹 Mezuniyet Buketi 🌹💕🧸</h1>
 
 <div class="subtitle">
-Mezuniyetinde bir prenses buket alamamış diye duydum...<br><br>
-Sanal bir bukete ne dersin bebeğim? ❤️
+Mezuniyetinde bir prenses buket alamamış diye duydum... ❤️<br><br>
+Sanal bir bukete ne dersin bebeğim? 🌹
 </div>
 
-<h2 style="color:#d63384;margin-top:20px;">
-Bir Buket Seç 🌹
-</h2>
+<h2 style="color:#d63384;">Bir Buket Seç</h2>
 
 <div class="gallery">
 
 <div class="buket" onclick="secildi()">
-BUKET 1
+<img src="https://i.ibb.co/FqW5L2pv/1-org-zoom-1.jpg">
 </div>
 
 <div class="buket" onclick="secildi()">
-BUKET 2
+<img src="https://i.ibb.co/Y7KdGxBz/61-Hu-Eo-Li8c-L-AC-UF1000-1000-QL80.jpg">
 </div>
 
 <div class="buket" onclick="secildi()">
-BUKET 3
+<img src="https://i.ibb.co/0R2qdXq8/1-org-zoom.jpg">
 </div>
 
 <div class="buket" onclick="secildi()">
-BUKET 4
+<img src="https://i.ibb.co/cKb9vrky/13-3-1.jpg">
 </div>
 
 </div>
@@ -146,17 +126,18 @@ BUKET 4
 
 <h2>🎓 Tebrikler Prensesim ❤️</h2>
 
-<p style="font-size:20px;line-height:1.8">
+<p style="font-size:20px;line-height:1.8;">
 
 Bugün senin günün.<br><br>
 
 Ne kadar emek verdiğini, ne kadar mücadele ettiğini ve bu noktaya gelmek için neler yaşadığını biliyorum.<br><br>
 
-Belki bugün herkes ailesiyle kutlama yapıyor olabilir ama ben seninle gurur duyuyorum.<br><br>
+Belki bugün aileni yanında göremedin ama şunu bilmeni istiyorum;<br>
+ben seninle gurur duyuyorum. ❤️<br><br>
 
 Bu buket sana gelsin. 🌹<br><br>
 
-Her çiçek güzelliğini, emeğini ve gücünü temsil ediyor.<br><br>
+Her çiçek emeğini, sabrını, gücünü ve güzelliğini temsil ediyor.<br><br>
 
 Mezuniyetini gönülden kutluyorum.<br><br>
 
@@ -180,7 +161,7 @@ top:document.body.scrollHeight,
 behavior:"smooth"
 });
 
-for(let i=0;i<25;i++){
+for(let i=0;i<30;i++){
 
 let heart=document.createElement("div");
 
@@ -188,13 +169,12 @@ heart.className="heart";
 heart.innerHTML="❤️";
 
 heart.style.left=Math.random()*100+"vw";
-heart.style.animationDuration=(3+Math.random()*4)+"s";
 
 document.body.appendChild(heart);
 
 setTimeout(()=>{
 heart.remove();
-},7000);
+},5000);
 
 }
 
